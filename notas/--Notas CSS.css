@@ -1,0 +1,231 @@
+/*nombre clave del archivo STYLE.css*/
+
+/* Sintaxis: Elemento{
+                       Propiedad: Valor;
+                    }
+*/
+
+/*Para conectar html con css hay que: 
+dentro de la etiqueta HEAD, recomendacion antes del TITLE
+agregamos link:css ---- <link rel="stylessheet href="buscamos el archivo STYLE.css"> */
+
+/*Tipo de relaciones:
+1-Estilo a una etiqueta: solo a un parrado o a todos los parrafos - HTML: uso la misma etiqueta - CSS: ej: footer {color: black}
+2-ID:unico para cosas especificas (como java scrip) - HTML: dentro de "section" agrego atributo ID ej: <section id="Uno"< - CSS: dentro de # coloco el ID ej: #Uno {color: black}
+3-Clase: la mas usada, nombre especifico a los elementos - HTML: dentro de "section" agrego atributo CLASS ej: <section class="Uno" - 
+CSS: dentro de . coloco nombre de clase ej: .Uno {color: black}> - ESTA LA PUEDO COPIAR DENTRO DE CADA SECTION EN HTML
+*/
+
+/*Stilo de listas:
+list-style-type: 
+*/
+
+/*Fuente:
+font-family: para eleguir estilos de fuentes instaladas en nuestra pc
+font-size: medida en px
+font-style: estilo
+font-weight: negrita a mas liviana
+text-decoration: agregar lineas sobre abajo, arriba, al medio
+text-align: al centro, derecha o izquierda
+*/
+
+/*Unidades de medida:
+1-Absolutas: 
+font-sixe: 20px
+margin: 40px (margen)
+
+2-Relativas:
+width: 100% (porcentaje se adapta a la pantalla)
+font-size: 2rem (relativo al elemento root (tamaño por default de html)
+font-size: 4em (depende de la medido por default que colocque en tu codigo, en STYLE coloco HTML{font-size: 20px} no aplica en HTML, sino como medida a comparar)
+*/
+
+/*Estilo de fuentes:
+siempre se carga al principio
+
+1-Font-family: dentro de una carpeta usar regla 
+@font-face{
+    font-family: coolvastica (nos pide colocar un nombre) 
+    src: url(coloco direccion de carpeta)}
+*/
+
+/*Box Model
+1-Content: contenido dentro de las etiquetas
+2-Padding: relleno, en orden padding-top, right, bottom, left
+3-Border: tamaño - estilo - color siempre pide estos 3 atributos
+4-Margin: separa un elemento de otro (simil configuracion de padding)
+*/
+
+/*Display
+0- respeta el box model: display: inline-block
+1-En linea
+2-En bloque 
+*/
+
+/*Position
+1-Relative (no afecta el diseño de las cajas)
+position: relative;
+top: 80px;
+left: 200px;
+
+2-Absolut (no le importa el diseño de la caja)
+position: absolut;
+top: 80px;
+left: 200px;
+
+3-Fixed (deja fijo en una posicion la caja)
+position: fixed;
+top: 80px;
+left: 200px;
+
+4-Sticky (deja fijo a partir de la posicion que indica)
+position: sticky;
+top: 80px;
+left: 200px;
+
+5- Z-index (trabaja sobre los "planos" -1 debajo 0 normal 1 sobre)
+z-index: -1;
+*/
+
+/*Flex Box (siempre hay que declararlo "display: flex;"
+0-Wrap: automatiza que no desborde el body
+flex-wrap: wrap;
+
+1-Direction: es para darle direccion
+flex-direction: column;
+
+2-Flow: wrap y direction a la vez
+flex-flow: row wrap;
+
+3-Justify (mueve el box al donde necesite) 
+justify-content: center; centra la box
+justify-content: space-around; separa los box
+
+4-Align (alinea items)
+align-items: center;
+align-self: 
+
+5-Order (ordenar los box negativo hacia la izquierda y positivo a la derecha)
+order: -1; (el box pasa mas a la izquierda)
+
+GRID
+truco para generar una seccion con varias div con class
+section>div.nombre_de_la_class*cantidad 
+
+luego declarar el flex:grid 
+
+-PRIMERO: Dividir grilla, de una linea a linea-
+grid-template-row: repeat (2, 1fr) filas - 2 de 1 fr de la pantalla
+grid-template-column: repeat (4, 1fr)
+
+-SEGUNDO: Indicar de donde a donde una grilla en "particular"-
+grid-row: 1/4 - esto es de la fila 1 a la 4
+grid-column: 1/3
+o se puede usar
+grid-row-start: 1
+grid-row-end: 4
+grid-column-start: 1
+grid-end-end: 3
+
+SEGUNDO: otra forma mas "artistica" es 
+grid-template-areas: (donde entre comillas "dibujo" cada seccion
+'nav header header'
+'nav productos aside'
+'nav prodcutos aside'
+'footer footer footer'
+
+luego declaro las clases o id de cada seccion con grid:area
+header{
+    grid-area: header
+}
+.navegador{ (segun la clase o a id, lo relacionamos como indicamos arriba en template-area)
+    grid-area: nav
+}
+.footer{
+    grdi-area: footer
+}
+
+TERCERO: separacion de las grillas
+row-gap: 10px
+column-gap: 10px
+
+
+RESPONSIVE
+Regla de media query, para hacer la pagina repsonsive, para ello declaramos en el style
+
+Telefono
+@media only screen and (max-width: 500px) {
+    aca colocamos todo los necesario para que trabaje responsive
+}
+
+Tablet
+@medi only screen and (min-width: 501px) and (max-width: 960px) {
+
+}
+
+Desktop
+@media only screen and (min width: 961px) {
+    
+}
+
+
+
+
+PSEUDOCLASES
+se colocan seguido de la clase con ":"
+
+:link - para hacer cosas cuando das click
+.clase:link{
+    text-decoration: underline
+}
+
+:hover para cuando paso el mouse por arriba
+
+:visited para saber si ya linkie el link antes
+
+:not (.clase) y hara los cambios excepto en la clase indicada dentro de los parentesis
+
+
+
+BOOTSTRAP
+lo declaro con CDN
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+BREAKPOINT
+dentro de la clase "col-sm-12 col-md-8 col-lg-6"
+
+
+GIT
+
+git init - para inciar repositorio, solo se hace una vez sino perdemos los commits que vamos generando
+git add index.html - solo sube ese archivo
+git add . - sube la carpeta completa
+git status - chequea el estado U (sin subir) A (listos para subir) 
+git commit -m "aca va un mensaje que ayude a recordar a que se refiere la version que estoy subiendo"
+git log - muestra todo del commit - nos dara numero de commit - usuario - email - dia y version
+git log --oneline - formato mas corto 
+git checkout "y aca identificador de commit largo o corto" sin colocar comillas :)
+git checkout master - voy a la version ultima que guarde como commit
+git merge master - es para juntar todos los commit en una ultima version 
+git push - subir a repositorio remoto
+git branch -m main - cambia el nombre de master a main - necesario y obligatorio
+git remote add origin https://github.com/Lucasgordillo/proyecto_coder_lg_sport.git - vinculo mi repositorio local al online
+git push -u origin main -  para actualizar el repositorio local hacia el online 
+
+
+
+
+*/

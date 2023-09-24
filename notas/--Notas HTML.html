@@ -1,0 +1,104 @@
+<!--nombre clave del archivo INDEX.html-->
+<!DOCTYPE html> <!--"Etiqueta clave" que define la version y estructura del documento-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio-Sanza</title> <!--etiqueta que le da nombre a la pestaña-->
+</head>
+<body> <!--todo dentro del body sera visto por el usuario-->
+    
+<!-- encabezado (h1 solo puedo utilizar uno por archivo) -->
+<h1>Titulo</h1> <!--a--> <h6>Subtitulo</h6>
+
+<!--Parrafos-->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+<!--Espacios, enfasis y bold-->
+<br> <!--salto de linea-->
+<em>enfasis</em> <!--enfasis / estilo cursiva-->
+<strong>negrita</strong> <!--convierte negrita-->
+
+<!--Semantica-->
+<header></header> <!--encabezado-->
+<section></section> <!--seccion de productos-->
+<footer></footer> <!--pied de pagina-->
+<nav></nav> <!--zonas navegables-->
+<a href=""></a> <!--enlaces-->
+<article></article><!--articulo-->
+<aside></aside> <!--barra lateral de busqueda-->
+<main></main> <!--menu-->
+
+<!--div y span-->
+<div></div> <!--elementos en bloques por default-->
+<span></span> <!--elementos en linea por default-->
+
+<!--Enlace absoluto, nos envia a una web externa (enlace externo)-->
+<a href=""></a> <!--todo dentro de ella, va ser clickeable/// href es hipervinculo-->
+
+<!--Enlace relativo-->
+<a href=""></a> <!--me envia a una pagina dentro de mi web
+    /// href va el nombre de mi pagina y dentro de > el nombre<-->
+<!--agrego un archio suelto o desde una carpeta "carpeta/archivo"-->
+
+<!--Enlace interno /// dentor de un mismo archivo o pagina, dentro de una seccion-->
+<a href=""></a> <!--dentro de "#contacto(seccion llamada contacto)"-->
+<section>
+id="contacto"
+<p>texto de la section de contacto</p>
+</section>
+
+<!--Enlace relativo + interno-->
+<a href="pages/1_productos#contacto"> texto del enlace</a>
+
+<!--Imagenes, video, audio e iframe-->
+<img src="" alt=""> <!--Atributos SRC (donde esta la imagen)/// 
+    ALT texto descriptivo de la imagen, ayuda por SEO para posicionar, y accesibilidad(muy importante
+    por que traduce en el sistema de apoyo)-->
+
+<video src=""></video>
+<audio src=""></audio>
+<iframe src="" frameborder="0"></iframe> <!--iframe es un estracto de la html donde esta el video/audio-->   
+
+<!--Listas desordenadas y ordenadas-->
+<!--Desordenadas /// UL declara la lista  y LI los items dentro de la lista-->    
+<ul> 
+<li>1</li>
+<li>2</li>
+</ul>
+<!--Ordenadas /// Ol declara la lista y LI los itemas-->
+<ol>
+<li>1</li>
+<li>2</li>
+</ol>
+
+<!--Tablas /// TABLE declara la tabla-->
+<table>
+   <!--TR nos da el inicio o fin de una fila-->
+   <tr>
+    <!--TD inicializa las columnas-->
+    <td></td>
+   </tr> 
+</table>
+
+<!--Formulario-->
+<form action=""></form> <!--FORMS activa el mismo, ACTION lugar donde se guardara la info del formulario (ej:forrmulario.php) 
+y METOD es el metodo para enviar el formulario el mejor es POST (de forma invisible) diferente al GET-->
+
+<!--input de nombre y clave-->
+<label for="">Nombre y Apellido</label> <!--se usa "siempre" LABEL para dar a entender que rellenar con INPUT TEXT, es el texto visible//para pc o telefono-->
+<input type="text" name="nombre" id="nombre" placeholder="Lucas Gordillo"> <!--INPUT TEXT, es el mas usado, debes colocar NOMBRE y ID /// se puede agregar el PLACEHOLDER que es el texto de ejemplo a completar-->
+<input type="password" name="" id=""><!--INPUT PASS, oculta los caracteres con *** -->
+<!--SELECT, opciones que el usuario puede elegir, siempre acompañado de la etiqueta OPTION -->
+<select name="" id="">
+             <option value="">Talle 38</option> <!--VALUE no se completa-->
+             <option value="">Talle 39</option>
+</select> 
+
+<textarea name="" id="" cols="30" rows="10"></textarea> <!--TEXTAREA, para dejar comentarios por parte del usuario-->
+
+<input type="checkbox" name="" id=""> <!--INPUT CHECKBOX, para tilde de check-->
+
+<input type="submit" value=""><!--INPUT SUBMIT, boton para enviar, en Value escribo "enviar"-->
+</body>
+</html>

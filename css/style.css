@@ -1,0 +1,17 @@
+/*INDEX*/   
+ .nav-link{
+    color: white;
+}
+
+/*CARROUSEL*/
+.carousel-inner h5{
+   color: white;
+   font-size: 50px;
+   text-shadow: 2px 2px black;
+}
+
+/*PRODUCTOS*/
+ .productos{
+    color: blue;
+ }
+
