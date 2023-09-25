@@ -217,14 +217,13 @@ git status - chequea el estado U (sin subir) A (listos para subir)
 git commit -m "aca va un mensaje que ayude a recordar a que se refiere la version que estoy subiendo"
 git log - muestra todo del commit - nos dara numero de commit - usuario - email - dia y version
 git log --oneline - formato mas corto 
-git checkout "y aca identificador de commit largo o corto" sin colocar comillas :)
+git checkout "y aca identificador de commit largo o corto" sin colocar comillas, para volver a otra version :)
 git checkout master - voy a la version ultima que guarde como commit
 git merge master - es para juntar todos los commit en una ultima version 
-git push - subir a repositorio remoto
 git branch -m main - cambia el nombre de master a main - necesario y obligatorio
-git remote add origin https://github.com/Lucasgordillo/proyecto_coder_lg_sport.git - vinculo mi repositorio local al online
-git push -u origin main -  para actualizar el repositorio local hacia el online 
-
+git remote add origin https://github.com/Lucasgordillo/proyecto_coder_lgsport.git - vincular con el repositorio remoto
+git push -u origin main -  para actualizar el repositorio local hacia el online - solo una vez se usa
+git push - subir a repositorio remoto cada nuevo commit 
 
 
 
