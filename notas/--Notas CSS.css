@@ -227,4 +227,9 @@ git push - subir a repositorio remoto cada nuevo commit
 
 
 
+
+SASS
+1)instalar node en el equipo
+2)intalar sass desde la consola con el comando "npm install -g sass"
+3)declarar origen y destino de compilacion, con el comando "sass --watch scss/styles.scss css/style"
 */

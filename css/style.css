@@ -1,20 +1,63 @@
-/*INDEX*/   
- .nav-link{
-    color: white;
-}
-.active{
-   background-color: whitesmoke;
+.nav-link {
+  color: white;
 }
 
-/*CARROUSEL*/
-.carousel-inner p{
-   color: white;
-   font-size: 30px;
-   text-shadow: 2px 2px black;
+.active {
+  background-color: whitesmoke;
 }
 
-/*PRODUCTOS*/
- .productos{
-    color: blue;
- }
+.carousel-inner p {
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 2px black;
+}
 
+body {
+  background-color: #FFF5E0;
+}
+
+.container-fluid {
+  background-color: #C70039;
+}
+
+.nav-item {
+  margin-left: 50px;
+}
+
+.titulo1 {
+  background-color: #C70039;
+  font-size: 50px;
+  margin-top: 50px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.titulo2 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #C70039;
+}
+
+.titulo3 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #C70039;
+}
+
+.footer1 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  background-color: #C70039;
+  margin-top: 100px;
+}
+
+.productos {
+  color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */

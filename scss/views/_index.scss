@@ -1,0 +1,48 @@
+.nav-link{
+    color: white;
+}
+.active{
+   background-color: whitesmoke;
+}
+.carousel-inner p{
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+ }
+
+ body{
+    background-color: $color_principal;
+ }
+
+ .container-fluid{
+    background-color: $color_terciario;
+}
+
+.nav-item{
+    margin-left: 50px
+}
+
+ .titulo1{
+    background-color: $color_terciario;
+    font-size: 50px;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+ }
+
+ .titulo2{
+    @include fuenteycolor;
+    background-color: $color_terciario;
+ }
+
+ .titulo3{
+    @include fuenteycolor;
+    background-color: $color_terciario;
+ }
+
+ .footer1{
+    @include fuenteycolor;
+    background-color: $color_terciario;
+    margin-top: 100px;
+ }
+ 
