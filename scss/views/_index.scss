@@ -28,12 +28,18 @@ color: black;
 transition-property: all;
 transition-duration: 1s;
 transition-delay: 0s;
-transition-timing-function: ease-in;
+transition-timing-function: ease ;
 border-radius: 91px 0px 90px 0px;
 -webkit-border-radius: 91px 0px 90px 0px;
 -moz-border-radius: 91px 0px 90px 0px;
 background: #ffffff;
 transform: scale(1.1);
+}
+
+.active{
+border-radius: 91px 0px 90px 0px;
+-webkit-border-radius: 91px 0px 90px 0px;
+-moz-border-radius: 91px 0px 90px 0px;
 }
 
 .carousel-inner{
@@ -64,6 +70,8 @@ box-shadow: 15px 15px 26px 6px rgba(0,0,0,0.75);
 
  .botones1{
    margin-top: 50px;
+   margin-left: 50px;
+  margin-right: 50px;
  }
 
  .footer1{

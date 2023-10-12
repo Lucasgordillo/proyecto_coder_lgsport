@@ -212,18 +212,18 @@ GIT
 
 git init - para inciar repositorio, solo se hace una vez sino perdemos los commits que vamos generando
 git add index.html - solo sube ese archivo
-git add . - sube la carpeta completa
-git status - chequea el estado U (sin subir) A (listos para subir) 
-git commit -m "aca va un mensaje que ayude a recordar a que se refiere la version que estoy subiendo"
+2)"git add ." - sube la carpeta completa
+1 y 3)git status - chequea el estado U (sin subir) A (listos para subir) 
+4)git commit -m "aca va un mensaje que ayude a recordar a que se refiere la version que estoy subiendo"
 git log - muestra todo del commit - nos dara numero de commit - usuario - email - dia y version
-git log --oneline - formato mas corto 
+5)git log --oneline - formato mas corto 
 git checkout "y aca identificador de commit largo o corto" sin colocar comillas, para volver a otra version :)
 git checkout master - voy a la version ultima que guarde como commit
 git merge main - es para juntar todos los commit en una ultima version 
 git branch -m main - cambia el nombre de master a main - necesario y obligatorio
 git remote add origin https://github.com/Lucasgordillo/proyecto_coder_lgsport.git - vincular con el repositorio remoto - solo una vez
 git push -u origin main -  para actualizar el repositorio local hacia el online - solo una vez se usa
-git push - subir a repositorio remoto cada nuevo commit 
+6)git push - subir a repositorio remoto cada nuevo commit 
 
 
 
@@ -231,5 +231,5 @@ git push - subir a repositorio remoto cada nuevo commit
 SASS
 1)instalar node en el equipo
 2)intalar sass desde la consola con el comando "npm install -g sass"
-3)declarar origen y destino de compilacion, con el comando "sass --watch scss/styles.scss css/style"
+3)declarar origen y destino de compilacion, con el comando "sass --watch scss/styles.scss css/style.css"
 */
