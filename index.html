@@ -14,6 +14,7 @@
     <link rel="shortcut icon" href="/img/logo/favicon-32x32.png" type="image/x-icon">
     <title>Lg Sport - Home</title> <!--cambiar segun pagina-->
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -52,7 +53,7 @@
         <p class="titulo1 col-12 badge rounded-pill text-wrap">Ropa con estilo en LG Sport</p>
     </section>
  
-    <section> <!--Carrousel con etiquetas-->
+    <section class="carrusel" > <!--Carrousel con etiquetas-->
       <div id="carouselExampleCaptions" class="container-xxl carousel slide" data-bs-ride="carousel" style="margin-top: 50px;">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -85,12 +86,12 @@
     </section>
     
     <section><!--Mapa-->
-      <div class="Mapa2 col-12 bg-gradient">
+      <div data-aos="fade-left" data-aos-duration="3000" class="Mapa2 col-12 bg-gradient">
         <p class="titulo2" >
           Donde encontrarnos
         </p>
       </div>
-      <div class="container">
+      <div data-aos="fade-right" data-aos-duration="3000" class="container">
         <div class="row">
           <div class="col-12">
             <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6957.019609818821!2d-69.91715448271431!3d-29.326051571126854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x969a5885c0c33677%3A0xc04c2fabddfbac57!2sCampamento%20Los%20Amarillos!5e0!3m2!1ses!2sar!4v1693097153220!5m2!1ses!2sar" width="100%" height="350px" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -98,13 +99,13 @@
         </div>
     </section>
     <section><!--links--> 
-        <div class="titulo3 col-12 bg-gradient">
+        <div data-aos="fade-left" data-aos-duration="3000" class="titulo3 col-12 bg-gradient">
           <p>
             Nuestras redes sociales
           </p>
         </div> 
-        <div class="row" style="margin-top: 40px;">  
-          <div class="col-12">
+        <div class="botones1">  
+          <div data-aos="fade-right" data-aos-duration="3000" class="col-12">
                 <div class="btn-group-vertical" role="group" aria-label="Basic outlined example" style="width: 100%; height: 50px;">
                   <a class="btn btn-outline-success" href="https://www.whatsapp.com/?lang=es_LA" target="_blank" role="button">Whatsapp</a>
                   <a class="btn btn-outline-danger" href="https://www.instagram.com/" target="_blank" role="button">Instagram</a>
@@ -121,6 +122,10 @@
     </footer>
  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 
 </html>

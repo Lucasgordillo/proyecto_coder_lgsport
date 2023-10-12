@@ -19,30 +19,56 @@
 }
 
 .nav-item{
-    margin-left: 50px
+    margin-left: 50px;
 }
 
+.nav-item:hover{
+background-color: white;
+color: black;
+transition-property: all;
+transition-duration: 1s;
+transition-delay: 0s;
+transition-timing-function: ease-in;
+border-radius: 91px 0px 90px 0px;
+-webkit-border-radius: 91px 0px 90px 0px;
+-moz-border-radius: 91px 0px 90px 0px;
+background: #ffffff;
+transform: scale(1.1);
+}
+
+.carousel-inner{
+box-shadow: 15px 15px 26px 6px rgba(0,0,0,0.75);
+-webkit-box-shadow: 15px 15px 26px 6px rgba(0,0,0,0.75);
+-moz-box-shadow: 15px 15px 26px 6px rgba(0,0,0,0.75); 
+}
  .titulo1{
     background-color: $color_terciario;
     font-size: 50px;
     margin-top: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
- }
-
- .titulo2{
+   }
+   .titulo1{animation:tracking-in-expand 2s cubic-bezier(.215,.61,.355,1.000) both}
+   @keyframes tracking-in-expand{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+ 
+   .titulo2{
     @include fuenteycolor;
     background-color: $color_terciario;
+    margin-top: 50px;
  }
 
  .titulo3{
     @include fuenteycolor;
     background-color: $color_terciario;
+    margin-top: 50px;
+ }
+
+ .botones1{
+   margin-top: 50px;
  }
 
  .footer1{
     @include fuenteycolor;
     background-color: $color_terciario;
     margin-top: 100px;
- }
+   }
  
