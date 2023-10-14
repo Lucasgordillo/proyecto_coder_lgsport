@@ -118,4 +118,58 @@ body {
   transform: scale(1.1);
 }
 
+.accordion-item {
+  background-color: white;
+  box-shadow: none;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 15px;
+}
+
+.accordion-body {
+  background-color: #141E46;
+  color: white;
+}
+
+.accordion-button {
+  background-color: #C70039;
+  color: white;
+  box-shadow: none;
+  font-size: 25px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #141E46;
+  color: white;
+  box-shadow: none;
+}
+
+.formulario1 {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.form-select {
+  background-color: #141E46;
+  color: white;
+}
+
+p {
+  font-size: 20px;
+}
+
+.form-label {
+  border: 10px;
+  color: black;
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: #C70039;
+  color: white;
+  width: 200px;
+}
+
 /*# sourceMappingURL=style.css.map */

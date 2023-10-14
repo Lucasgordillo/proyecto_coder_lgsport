@@ -1,0 +1,26 @@
+.accordion-item{
+background-color: white;
+box-shadow: none;
+margin-top: 50px;
+margin-left: 50px;
+margin-right: 50px;
+font-size: 15px;
+}
+
+.accordion-body{
+    background-color: $color-cuaternario;
+    color: white;
+    }
+
+.accordion-button{
+    background-color: $color-terciario;
+    color: white;
+    box-shadow: none;
+    font-size: 25px;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: $color-cuaternario;
+    color: white;
+    box-shadow: none;
+}
