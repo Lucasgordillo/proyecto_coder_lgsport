@@ -19,11 +19,15 @@ p{
     margin-top: 30px;
 }
 
-.btn{
+.enviar{
     background-color: $color-terciario;
     color: white;
     width: 200px;
 }
 
+.enviar:hover{
+    background-color: $color-cuaternario;
+    color: white;
+}
 
 
