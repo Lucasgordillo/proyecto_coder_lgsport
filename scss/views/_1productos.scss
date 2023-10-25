@@ -1,15 +1,25 @@
-.productos{
-    margin-top: 50px;
-    margin-left: 50px;
-    }
 
+
+.titulo4{
+    @include fuenteycolor;
+    background-color: $color_terciario;
+    margin-top: 100px;
+    margin-bottom: 100px;
+ }
 
 .card{
-    margin-right: 50px;
-    margin-bottom: 50px;
+    margin: 50px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .card:hover{
    transform: scale(1.1);
    }
+
+.bt1{
+    color: $color_terciario;
+}
+
+.bt2{
+    color: $color_cuaternario;
+}

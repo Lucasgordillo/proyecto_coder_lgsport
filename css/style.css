@@ -79,6 +79,8 @@ body {
   text-align: center;
   background-color: #C70039;
   margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .titulo3 {
@@ -87,12 +89,20 @@ body {
   text-align: center;
   background-color: #C70039;
   margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .botones1 {
   margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.btn-group-vertical {
+  width: 100%;
+  height: 20%;
 }
 
 .footer1 {
@@ -103,14 +113,17 @@ body {
   margin-top: 100px;
 }
 
-.productos {
-  margin-top: 50px;
-  margin-left: 50px;
+.titulo4 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  background-color: #C70039;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .card {
-  margin-right: 50px;
-  margin-bottom: 50px;
+  margin: 50px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -118,13 +131,21 @@ body {
   transform: scale(1.1);
 }
 
+.bt1 {
+  color: #C70039;
+}
+
+.bt2 {
+  color: #141E46;
+}
+
 .accordion-item {
-  background-color: white;
+  background-color: #FFF5E0;
   box-shadow: none;
   margin-top: 50px;
   margin-left: 50px;
   margin-right: 50px;
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .accordion-body {
@@ -136,7 +157,7 @@ body {
   background-color: #C70039;
   color: white;
   box-shadow: none;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -156,8 +177,12 @@ body {
   color: white;
 }
 
-p {
+.mb-1, .mb-3, .mb-4 {
   font-size: 20px;
+}
+
+.mb-2 {
+  margin-top: 10px;
 }
 
 .form-label {
